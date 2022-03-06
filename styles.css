@@ -1,0 +1,68 @@
+/*QR Code to 
+Purpose: When the QR code is scanned, the user will be taken to the FrontEndMentor.io website
+Author: William Harkley
+Date: 3/6/2022*/
+
+@font-face {
+  font-family: Outfit;
+  src: url(https://fonts.google.com/specimen/Outfit) format("truetype");
+  font-weight: 400, 700;
+}
+:root {
+  --White: hsl(0, 0%, 100%);
+  --LightGray: hsl(212, 45%, 89%);
+  --GrayishBlue: hsl(220, 15%, 55%);
+  --DarkBlue: hsl(218, 44%, 22%);
+}
+
+body{
+    background-color: var(--LightGray);
+    font-family: Outfit, sans-serif, serif;
+    text-align: center;
+}
+
+.qrbadge {
+  background-color: var(--White);
+  width: 27%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  border-radius: 8%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+img {
+  width: 85%;
+  margin-top: 2%;
+  border-radius: 8%;
+}
+
+.bold {
+  color: var(--DarkBlue);
+  margin-bottom: 25px;
+}
+
+p {
+  color: var(--GrayishBlue);
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 1440px){
+    body {
+      width: 100%;
+    }
+  }
+
+.attribution { 
+    font-size: 11px; text-align: center;
+ }
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
