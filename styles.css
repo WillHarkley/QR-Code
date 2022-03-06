@@ -41,23 +41,36 @@ img {
 .bold {
   color: var(--DarkBlue);
   margin-bottom: 25px;
+  font-size: large;
 }
 
 p {
   color: var(--GrayishBlue);
+  font-size: small;
 }
 
-@media only screen and (max-width: 375px) {
-    body {
-      width: 100%;
-    }
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .qrbadge {
+    width: 80%;
+    padding: 0;
+    padding-bottom: 10px;
+    font-size: large;
   }
-
-  @media (min-width: 1440px){
-    body {
-      width: 100%;
-    }
+  img {
+    width: 65%;
+    margin-top: 5%;
   }
+  p {
+    font-size: small;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
 
 .attribution { 
     font-size: 11px; text-align: center;
@@ -65,4 +78,3 @@ p {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
-
